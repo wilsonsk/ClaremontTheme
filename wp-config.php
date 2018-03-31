@@ -98,9 +98,9 @@ define ('SAVEQUERIES', true);
  */
 define('WP_ALLOW_REPAIR', true);
 //log errors: create a php_error.log in root WordPress directory, then turn on the log_errors PHP option and point to your logging file:
-//@ini_set('log_errors', 'On');
-//@ini_set('display_errors', 'Off');
-//@ini_set('error_log', '/var/www/html/php_error.log');
+@ini_set('log_errors', 'On');
+@ini_set('display_errors', 'Off');
+@ini_set('error_log', '/var/www/html/php_error.log');
 
 define( 'WP_ALLOW_MULTISITE', true );
 define('MULTISITE', true);
