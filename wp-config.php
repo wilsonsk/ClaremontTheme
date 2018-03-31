@@ -20,13 +20,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'database_name_here');
+define('DB_NAME', 'wordpressdb');
 
 /** MySQL database username */
-define('DB_USER', 'username_here');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'password_here');
+define('DB_PASSWORD', 'baylor24');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -63,6 +63,7 @@ define('NONCE_SALT',       'put your unique phrase here');
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
+//security measure:
 $table_prefix  = 'wp_';
 
 /**
@@ -77,13 +78,43 @@ $table_prefix  = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', false);
+//debug is set to false by default
+//define('WP_DEBUG', true);
+
+/**
+ * Skyler's OPTIONS
+ */
+//five minute autosave interavls; default is 60 seconds -- setting to five minutes reduces auto-save revisions and therefore, db space
+define ('AUTOSAVE_INTERVAL', 300);
+
+//this option saves all database queries into a global array that can be displayed on your page
+define ('SAVEQUERIES', true);
+/**
+ * to display the query array in your theme, add the following code to any theme template file to view:
+ * if(current_user_can( 'manage_options')){
+ *      global $wpdb;
+ *      print_r($wpdb->queries);
+ * }
+ */
+define('WP_ALLOW_REPAIR', true);
+//log errors: create a php_error.log in root WordPress directory, then turn on the log_errors PHP option and point to your logging file:
+//@ini_set('log_errors', 'On');
+//@ini_set('display_errors', 'Off');
+//@ini_set('error_log', '/var/www/html/php_error.log');
+
+define( 'WP_ALLOW_MULTISITE', true );
+define('MULTISITE', true);
+define('SUBDOMAIN_INSTALL', false);
+define('DOMAIN_CURRENT_SITE', '52.89.243.4');
+define('PATH_CURRENT_SITE', '/');
+define('SITE_ID_CURRENT_SITE', 1);
+define('BLOG_ID_CURRENT_SITE', 1);
 
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
+        define('ABSPATH', dirname(__FILE__) . '/');
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
