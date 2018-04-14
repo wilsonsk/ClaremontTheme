@@ -3,6 +3,11 @@
   Template Name: Home Page
  */
 
+// CUSTOM FIELDS
+$prelaunch_price  = get_post_meta(9,'prelaunch_price',true);
+$launch_price  = get_post_meta(9,'launch_price',true);
+$final_price  = get_post_meta(9,'final_price',true);
+
 get_header();
 ?>
 
@@ -19,20 +24,20 @@ get_header();
 
 		    		<div class="col-sm-7 hero-text">
 			    		<h1><?php bloginfo('name()') ?></h1>
-			            <p class="lead">Earn An Extra $1k - $5k a Month by Learning to Code Your Very Own Responsive &amp; Custom WordPress Websites with Bootstrap</p>
+			            <p class="lead"><?php bloginfo('decription') ?></p>
 
 			            <div id="price-timeline">
 			            	<div class="price active">
 			            		<h4>Pre-Launch Price <small>Ends soon!</small></h4>
-			            		<span>$149</span>
+			            		<span><?php echo $prelaunch_price ?></span>
 			            	</div><!-- end price -->
 			            	<div class="price">
 			            		<h4>Launch Price <small>Coming soon!</small></h4>
-			            		<span>$299</span>
+                      <span><?php echo $launch_price ?></span>
 			            	</div><!-- end price -->
 			            	<div class="price">
 			            		<h4>Final Price <small>Coming soon!</small></h4>
-			            		<span>$399</span>
+                      <span><?php echo $final_price ?></span>
 			            	</div><!-- end price -->
 			            </div><!-- price-timeline -->
 
