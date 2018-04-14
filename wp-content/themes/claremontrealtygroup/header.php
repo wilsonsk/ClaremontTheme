@@ -25,48 +25,47 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'claremontrealtygroup' ); ?></a>
 
 	<!-- HEADER
-================================================== -->
-<header class="site-header" role="banner">
-
-	<!-- NAVBAR
 	================================================== -->
-	<div class="navbar-wrapper">
+	<header class="site-header" role="banner">
 
-		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="/"><img src="assets/img/logo.png" alt="Bootstrap to Wordpress"></a>
-				</div>
+		<!-- NAVBAR
+		================================================== -->
+		<div class="navbar-wrapper">
 
-				<?php
-					wp_nav_menu( array(
+			<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 
-						'theme_location'	=> 'primary',
-						'container'			=> 'nav',
-						'container_class'	=> 'navbar-collapse collapse',
-						'menu_class'		=> 'nav navbar-nav navbar-right'
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
 
-					) );
-				?>
+						<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo.png" alt="Bootstrap to WordPress"></a>
 
-				<!-- <div class="navbar-collapse collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="/">Home</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="resources.html">Resources</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</div>
-			</div> -->
-		</div>
+					</div><!-- navbar-header -->
 
-	</div>
-</header>
+					<!-- If the menu (WP admin area) is not set, then the "menu_class" is applied to "container". In other words, it overwrites the "container_class". Ref: http://wordpress.org/support/topic/wp_nav_menu-menu_class-usage-bug?replies=4 -->
+
+					<?php
+						wp_nav_menu( array(
+
+							'theme_location'	=> 'primary',
+							'container'			=> 'nav',
+							'container_class'	=> 'navbar-collapse collapse',
+							'menu_class'		=> 'nav navbar-nav navbar-right'
+
+						) );
+					?>
+
+				</div><!-- container -->
+
+			</div><!-- navbar -->
+
+		</div><!-- navbar-wrapper -->
+
+	</header>
 
 	<div id="content" class="site-content">
