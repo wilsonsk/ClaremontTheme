@@ -44,14 +44,15 @@
 					<a class="navbar-brand" href="/"><img src="assets/img/logo.png" alt="Bootstrap to Wordpress"></a>
 				</div>
 
-				<<?php
+				<?php
 					wp_nav_menu( array(
-							'theme-location'	=>	'primary',
-							'container'				=>	'nav',
-							'container_class'	=>	'navbar-collapse collapse',
-							'menu_class'			=>	'nav navbar-nav navbar-right'
-						)
-					);
+
+						'theme_location'	=> 'primary',
+						'container'			=> 'nav',
+						'container_class'	=> 'navbar-collapse collapse',
+						'menu_class'		=> 'nav navbar-nav navbar-right'
+
+					) );
 				?>
 
 				<!-- <div class="navbar-collapse collapse">
