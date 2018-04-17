@@ -8,6 +8,9 @@ $prelaunch_price  = get_post_meta(9,'prelaunch_price',true);
 $launch_price  = get_post_meta(9,'launch_price',true);
 $final_price  = get_post_meta(9,'final_price',true);
 
+$course_url = get_post_meta(9, 'course_url', true);
+$button_text = get_post_meta(9m 'button_text', true);
+
 get_header();
 ?>
 
@@ -41,7 +44,7 @@ get_header();
 			            	</div><!-- end price -->
 			            </div><!-- price-timeline -->
 
-			            <p><a class="btn btn-lg btn-danger" href="/" role="button">Enroll now &raquo;</a></p>
+			            <p><a class="btn btn-lg btn-danger" href=<?php echo $course_url ?>" role="button"><?php $button_text ?></a></p>
 		    		</div><!-- col -->
 
     			</div><!-- row -->
