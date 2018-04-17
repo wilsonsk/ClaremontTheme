@@ -44,7 +44,7 @@ get_header();
 			            	</div><!-- end price -->
 			            </div><!-- price-timeline -->
 
-			            <p><a class="btn btn-lg btn-danger" href="<?php echo $course_url; ?>" role="button"><?php echp $button_text; ?></a></p>
+			            <p><a class="btn btn-lg btn-danger" href="<?php echo $course_url; ?>" role="button"><?php echo $button_text; ?></a></p>
 		    		</div><!-- col -->
 
     			</div><!-- row -->
