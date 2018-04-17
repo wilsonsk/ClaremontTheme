@@ -9,7 +9,7 @@ $launch_price  = get_post_meta(9,'launch_price',true);
 $final_price  = get_post_meta(9,'final_price',true);
 
 $course_url = get_post_meta(9, 'course_url', true);
-$button_text = get_post_meta(9m 'button_text', true);
+$button_text = get_post_meta(9, 'button_text', true);
 
 get_header();
 ?>
