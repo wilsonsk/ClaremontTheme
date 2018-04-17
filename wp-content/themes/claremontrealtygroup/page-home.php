@@ -10,6 +10,8 @@ $final_price  = get_post_meta(9,'final_price',true);
 
 $course_url = get_post_meta(9, 'course_url', true);
 $button_text = get_post_meta(9, 'button_text', true);
+$optin_text = get_post_meta(9, 'optin_text', true);
+$optin_button_text = get_post_meta(9, 'optin_button_text', true);
 
 get_header();
 ?>
@@ -60,12 +62,12 @@ get_header();
 			<div class="row">
 
 				<div class="col-sm-8">
-					<p class="lead"><strong>Subscribe to our mailing list.</strong> We'll send something special as a thank you.</p>
+					<p class="lead"><strong><?php echo $optin_text ?></p>
 				</div><!-- end col -->
 
 				<div class="col-sm-4">
 					<button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#myModal">
-						Click here to subscribe
+						<?php echo $optin_button_text ?>
 					</button>
 				</div><!-- end col -->
 
