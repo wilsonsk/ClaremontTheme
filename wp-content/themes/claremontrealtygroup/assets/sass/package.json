@@ -1,0 +1,17 @@
+{
+  "name": "claremontrealtygroup",
+  "version": "1.0.0",
+  "description": "A Wordpress theme with Sass",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}

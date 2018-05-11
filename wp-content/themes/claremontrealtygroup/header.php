@@ -21,6 +21,7 @@
 
 	<!-- Font Awesome Icons -->
 	<link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="<?php bloginfo('stylesheet_directory'); ?>/assets/sass/css/style.css" rel="stylesheet">
 
 
 	<!-- Google Fonts -->
