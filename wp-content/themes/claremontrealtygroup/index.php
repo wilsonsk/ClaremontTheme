@@ -1,8 +1,4 @@
 <?php
-/*
-Theme Name: My Theme Name
-Version: 1.0.0
-*/ 
 /**
  * The main template file
  *
