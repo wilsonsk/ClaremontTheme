@@ -13,6 +13,9 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" conten="ie-edge">
+
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
@@ -23,6 +26,10 @@
 	<link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<link href="<?php bloginfo('stylesheet_directory'); ?>/assets/sass/css/style.css" rel="stylesheet">
 
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900">
+
+	<link rel="stylesheet" href="/assets/sass/css/icons.css">
 
 	<!-- Google Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>

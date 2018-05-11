@@ -15,34 +15,6 @@ $optin_button_text = get_post_meta(9, 'optin_button_text', true);
 
 get_header();
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" conten="ie-edge">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/icons.css">
-
-    <title>Natours | Exciting tours for adventurous people</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__logo-box">
-        <!-- div is wrapper because img is an inline element - position the container to positon img -->
-        <img src="./img/logo-white.png" alt="Logo" class='header__logo'>
-      </div>
-      <div class="header__text-box">
-        <h1 class="heading-primary">
-          <span class="heading-primary--main">Outdoors</span><span class="heading-primary--sub"> is where life happens</span>
-        </h1>
-        <a href="#" class="btn btn--white btn--animated">Discover Our Tours</a>
-      </div>
-    </header>
-
     <main>
       <section class="section-about">
         <div class="utl-center-text utl-margin-bottom-md">
@@ -288,8 +260,6 @@ back
       </div>
     </section> -->
 
-  </body>
-</html>
 
 
 <?php
