@@ -95,6 +95,7 @@
 <script src="<?php bloginfo('template_directory') ?>/assets/js/jquery-2.1.1.min.js"></script>
 <script src="<?php bloginfo('template_directory') ?>/assets/js/bootstrap.min.js"></script>
 <script src="<?php bloginfo('template_directory') ?>/assets/js/main.js"></script>
+<script type="text/javascript" src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js">
 
 <script type="text/javascript" src="//use.typekit.net/gla7wnd.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
