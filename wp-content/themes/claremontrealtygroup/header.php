@@ -27,9 +27,7 @@
 	<link href="<?php bloginfo('stylesheet_directory'); ?>/assets/sass/css/style.css" rel="stylesheet">
 	<link href="<?php bloginfo('stylesheet_directory'); ?>/assets/sass/css/icons.css" rel="stylesheet">
 
-	<script type="text/javascript" src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
-
-	</script>
+	<link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
 	<!-- Google Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900">
