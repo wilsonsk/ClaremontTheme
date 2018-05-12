@@ -26,6 +26,7 @@ get_header();
           <span class="heading-primary--main">Outdoors</span><span class="heading-primary--sub"> is where life happens</span>
         </h1>
         <a href="#" class="btn btn--white btn--animated">Discover Our Tours</a>
+        <button class="foo-button mdc-button">Button</button>
       </div>
     </header>
 
